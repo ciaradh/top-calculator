@@ -38,15 +38,24 @@ function multiply(firstNumber, secondNumber) {
     return firstNumber / secondNumber;
 }
 
-let sumNumbers = sum(1,2);
-console.log({sumNumbers});
+/**
+ * Calls one of the 4 functions on the two numbers
+ * @param {number} firstNumber 
+ * @param {number} secondNumber 
+ * @param {string} operator 
+ */
+function operate(firstNumber, secondNumber, operator) {
+    switch(operator) {
+        case '+':
+            return sum(firstNumber, secondNumber);
+        case '-':
+            return subtract(firstNumber, secondNumber);
+        case '*':
+            return multiply(firstNumber, secondNumber);
+        case '/':
+            return divide(firstNumber, secondNumber);
+    }
+}
 
-let sub = subtract(5,2);
-console.log({sub});
 
-let product = multiply(3,2);
-console.log({product});
-
-let division = divide(3,2);
-console.log({division});
 
