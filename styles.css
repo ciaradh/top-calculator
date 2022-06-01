@@ -3,16 +3,18 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    -webkit-font-smoothing: antialiased;
 }
 
 .Calculator {
     margin-top: 100px;
     width: 350px;
+    font-weight: bold;
 }
 
 .Top {
     background-color: #555658;
-    padding: 40px 40px 10px 40px;
+    padding: 40px 40px 13px 40px;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
 }
@@ -21,7 +23,22 @@ body {
     background-color: #bbd0c1;
     border-radius: 15px;
     padding: 10px;
-    font-size: 50px;
+    flex-direction: column;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    box-shadow: inset #a7b3aa 0px 4px 0px 0px,#e6e6e6 0px 3px 0px 0px;
+    height: 70px;
+}
+
+.Display__current {
+    font-size: 40px;
+    height: 40px;
+}
+
+.Display__previous {
+    font-size: 20px;
+    height: 20px;
 }
 
 .Bottom {
@@ -42,6 +59,15 @@ body {
     border-radius: 10px;
     color: white;
     font-size: 25px;
+    cursor: pointer;
+    border: 0;
+    box-shadow: #e6e6e6 3px 3px 0px 0px;
+}
+
+.Button--disabled {
+    /* background-color: #87888a; */
+    cursor: default;
+    opacity: 0.4;
 }
 
 .Button--equal  {

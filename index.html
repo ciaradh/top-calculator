@@ -4,35 +4,39 @@
         <meta charset="utf-8">
         <title>TOP Calculator</title>
         <link rel="stylesheet" href="styles.css">
-        <script src="app.js"></script>
+        
     </head>
     <body>
         <div class="Calculator">
             <div class="Top">
-                <div class="Display">0</div>
+                <div class="Display">
+                    <div class="Display__previous"></div>
+                    <div class="Display__current"></div>
+                </div>
             </div>
             <div class="Bottom">
-                <button class="Button" value="clear">AC</button>
-                <button class="Button" value="back">CE</button>
-                <button class="Button" value="%">%</button>
-                <button class="Button" value="/">/</button>
-                <button class="Button" value="7">7</button>
-                <button class="Button" value="8">8</button>
-                <button class="Button" value="9">9</button>
-                <button class="Button" value="*">x</button>
-                <button class="Button" value="4">4</button>
-                <button class="Button" value="5">5</button>
-                <button class="Button" value="6">6</button>
-                <button class="Button" value="-">-</button>
-                <button class="Button" value="1">1</button>
-                <button class="Button" value="2">2</button>
-                <button class="Button" value="3">3</button>
-                <button class="Button Button--equal" value="=">=</button>
-                <button class="Button" value=".">.</button>
-                <button class="Button" value="0">0</button>
-                <button class="Button" value="+">+</button>
+                <button onclick="buttonClick(this)" class="Button" value="clear">AC</button>
+                <button onclick="buttonClick(this)" class="Button" value="back">CE</button>
+                <button class="Button Button--disabled" value="%">%</button>
+                <button onclick="buttonClick(this)" class="Button" value="/">/</button>
+                <button onclick="buttonClick(this)" class="Button" value="7">7</button>
+                <button onclick="buttonClick(this)" class="Button" value="8">8</button>
+                <button onclick="buttonClick(this)" class="Button" value="9">9</button>
+                <button onclick="buttonClick(this)" class="Button" value="*">x</button>
+                <button onclick="buttonClick(this)" class="Button" value="4">4</button>
+                <button onclick="buttonClick(this)" class="Button" value="5">5</button>
+                <button onclick="buttonClick(this)" class="Button" value="6">6</button>
+                <button onclick="buttonClick(this)" class="Button" value="-">-</button>
+                <button onclick="buttonClick(this)" class="Button" value="1">1</button>
+                <button onclick="buttonClick(this)" class="Button" value="2">2</button>
+                <button onclick="buttonClick(this)" class="Button" value="3">3</button>
+                <button onclick="buttonClick(this)" class="Button Button--equal" value="=">=</button>
+                <button onclick="buttonClick(this)" class="Button" value=".">.</button>
+                <button onclick="buttonClick(this)" class="Button" value="0">0</button>
+                <button onclick="buttonClick(this)" class="Button" value="+">+</button>
             </div>
 
         </div>
+        <script src="app.js"></script>
     </body>
 </html>
